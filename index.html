@@ -1,0 +1,64 @@
+<--- index.html --->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BlueZone</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/aa4f37959d.js" crossorigin="anonymous"></script>
+  </head>
+  <bolsdy>
+    <div class="container">
+  <nav class="navbar">
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+  <section id="home">
+    <!-- <h1 class = "title">Hello World...</h1> -->
+    <div class="wrapper">
+    <ul class="dynamic-txts2">
+      <li><span>Project BlueZone</span></li>
+    </ul>
+  </div>
+<p class="createdby">
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+</p>
+  </section>
+
+      
+  <section id="about">
+      <h3 class="animate-charcter">About</h3>
+            <div class="wrapper">
+            <div class="static-txt">I'm a</div>
+            <ul class="dynamic-txts">
+              <li><span>&nbsp; Web Application</span></li>
+              <li><span>&nbsp; Predictive Model</span></li>
+              <li><span>&nbsp; Health Assistant</span></li>
+              <li><span>&nbsp; Results Analyzer</span></li>
+            </ul>
+</div>
+    </section>
+
+      
+  <section id="team">
+      <h1 class="animate-charcter"> Meet Team Blue</h1>
+  </section>
+      
+
+  <section id="contact">
+      <h1 class="animate-charcter">Contact</h1>
+      <p> <br><a href = "mailto: notdanielzhang@gmail.com">Click here to send an email</a> </p>
+  </section>
+      
+
+</div>
+  </body>
+  <script="{{ url_for('static', filename='js/smoothscroll.js') }}">
+    
+</script>
+</html>
