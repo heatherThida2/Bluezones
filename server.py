@@ -15,18 +15,20 @@ def index():
 def create_account():
     return render_template('createAccount.html')
     
-@app.route('/createAccount', methods=['POST'])
+@app.route('/createAccount',methods=["POST"])
 def sign_up():
     #getting informatrion from sign up form
-    username = request.form.get['username']
-    userlastname = request.form.get['userlastname']
-    email = request.form.get['email']
-    password = request.form.get['password']
+    fname = request.form.get('fname')
+    lname = request.form.get('lname')
+    email = request.form.get('email')
+    password = request.form.get('password')
+    print("@@@@@@@++++>>"+fname +lname+ email+ password)
 
     #need logic to check if username already exists
     #if username exists, return error message
     #if username doesn't exist, create user and return success message
-    return redirect('/createAccount.html')
+    return redirect('/')
+    
 
 #login page
 @app.route('/login')
